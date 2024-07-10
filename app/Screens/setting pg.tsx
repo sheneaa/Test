@@ -9,13 +9,13 @@ import { TranslationKeys } from '@/i18n/types';
 
 const Settings = ({ navigation }: any) => {
 
-  
+
   const { t } = useTranslation();
 
   const greet = (key: TranslationKeys) => t(key);
   const handlelogout = async () => {
-   
-   
+
+
   };
   return (
     <TouchableWithoutFeedback onPress={Keyboard.dismiss}>

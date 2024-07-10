@@ -20,7 +20,7 @@ export type RootStackParamList = {
   password: undefined;
   newpwd: undefined;
   setting: undefined
-  notif: undefined;
+  notification: undefined;
   help: undefined;
   info: undefined;
   Service: undefined;
@@ -32,17 +32,26 @@ const Stack = createNativeStackNavigator<RootStackParamList>();
 const navigation = () => {
 
 
-  const { t, i18n } = useTranslation();
+  const { t} = useTranslation();
 
   // };
   return (
     <NavigationContainer>
       <Stack.Navigator>
-        <Stack.Screen name='setting' component={setting} options={{ title: t('setting') }} />
+        <Stack.Screen name='setting' component={setting} options={{ title: 'My home' }} />
         <Stack.Screen name='password' component={Password} />
-        <Stack.Screen name="profile" component={profilClient} />
+        <Stack.Screen name="profile" component={profilClient} options={{ title: 'My home' }}/>
         <Stack.Screen name='newpwd' component={newpwd} />
-        <Stack.Screen name='notif' component={notif} />
+        <Stack.Screen name='notification' component={notif} options={{
+          title: 'My home',
+          headerStyle: {
+            backgroundColor: '#f4511e',
+          },
+          headerTintColor: '#fff',
+          headerTitleStyle: {
+            fontWeight: 'bold',
+          },
+        }}/>
         <Stack.Screen name='help' component={help} />
         <Stack.Screen name='info' component={info} />
         <Stack.Screen name='Service' component={Service} />

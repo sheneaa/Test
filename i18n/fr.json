@@ -1,5 +1,7 @@
 {
     "name": "Nom",
+    "french":"Francais",
+    "english":"Anglais",
     "surname": "Prénom",
     "dateOfBirth": "Date de naissance",
     "status": "Statut",
@@ -29,7 +31,7 @@
     "New password": "Nouveau mot de pass",
     "Confirm password": "Confirmer le mot de passe",
     "Update": "Mise à jour",
-     "setting": "paramètres",
+     "setting": "Paramètres",
     "Password": "Mot de passe",
     "profilClient": "Profil Client",
     "newpwd": " Nouveau mot de passe",

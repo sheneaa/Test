@@ -68,15 +68,78 @@ export default function App() {
   return (
     <NavigationContainer independent={true}>
       <Stack.Navigator >
-        <Stack.Screen name='setting' component={setting} />
-        <Stack.Screen name='password' component={Password} />
-        <Stack.Screen name="profile" component={profilClient} />
+        <Stack.Screen name='setting' component={setting} options={{
+          title: t('setting'),
+          headerStyle: {
+            backgroundColor: '#f4511e',
+          },
+          headerTintColor: '#fff',
+          headerTitleStyle: {
+            fontWeight: 'bold',
+          },
+        }}/>
+        <Stack.Screen name='password' component={Password} options={{
+          title: t('password'),
+          headerStyle: {
+            backgroundColor: '#f4511e',
+          },
+          headerTintColor: '#fff',
+          headerTitleStyle: {
+            fontWeight: 'bold',
+          },
+        }}/>
+        <Stack.Screen name="profile" component={profilClient} options={{
+          title: t('profile'),
+          headerStyle: {
+            backgroundColor: '#f4511e',
+          },
+          headerTintColor: '#fff',
+          headerTitleStyle: {
+            fontWeight: 'bold',
+          },
+        }}/>
         <Stack.Screen name='newpwd' component={newpwd} />
-        <Stack.Screen name='notif' component={notif} />
-        <Stack.Screen name='About' component={About} />
+        <Stack.Screen name='notif' component={notif} options={{
+          title: t('notification'),
+          headerStyle: {
+            backgroundColor: '#f4511e',
+          },
+          headerTintColor: '#fff',
+          headerTitleStyle: {
+            fontWeight: 'bold',
+          },
+        }}/>
+        <Stack.Screen name='About' component={About} options={{
+          title: t('about'),
+          headerStyle: {
+            backgroundColor: '#f4511e',
+          },
+          headerTintColor: '#fff',
+          headerTitleStyle: {
+            fontWeight: 'bold',
+          },
+        }}/>
         <Stack.Screen name='info' component={info} />
-        <Stack.Screen name='Service' component={Service} />
-        <Stack.Screen name='Language' component={Language} />
+        <Stack.Screen name='Service' component={Service} options={{
+          title: t('service'),
+          headerStyle: {
+            backgroundColor: '#f4511e',
+          },
+          headerTintColor: '#fff',
+          headerTitleStyle: {
+            fontWeight: 'bold',
+          },
+        }}/>
+        <Stack.Screen name='Language' component={Language} options={{
+          title: t('language'),
+          headerStyle: {
+            backgroundColor: '#f4511e',
+          },
+          headerTintColor: '#fff',
+          headerTitleStyle: {
+            fontWeight: 'bold',
+          },
+        }} />
       </Stack.Navigator>
     </NavigationContainer>
   );
